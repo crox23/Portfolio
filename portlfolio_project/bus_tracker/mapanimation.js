@@ -15,12 +15,12 @@ const busStops = [
 ];
 
 // TODO: add your own access token
-mapboxgl.accessToken ='pk.eyJ1IjoiY3JveDIzIiwiYSI6ImNrbWNzMG1jaTJlbWgydXBtaWc3cWgwNDIifQ.jWxj-_YzJ7U4uoBF5Oy_mg';
+mapboxgl.accessToken ='pk.eyJ1IjoiY3JveDIzIiwiYSI6ImNrbmF2NjB5djBrMm4ydm8waWo5b2d0MjEifQ.ul59ADBC4q_h-ZJhd8EaNQ';
 //'pk.eyJ1IjoiY3JveDIzIiwiYSI6ImNrbWNyeGU0bjFzY3gyd3A5bDVkZmFqeXcifQ.J5yP7qevLCyOQxPCbnqY2Q';
 //'pk.eyJ1IjoiY3JveDIzIiwiYSI6ImNrbWNzMG1jaTJlbWgydXBtaWc3cWgwNDIifQ.jWxj-_YzJ7U4uoBF5Oy_mg';
   //'pk.eyJ1IjoidGVzdHVzZXIxMDAwIiwiYSI6ImNraDkzZ2pkMzAzMHoycnBmMXpvZ3UwZnMifQ.jAE4YsPeAJv50VK92NSpOQ';
 
-// TODO: create the map object using mapboxgl.map() function
+// map object using mapboxgl.map() function
 let map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v11',
@@ -28,13 +28,13 @@ let map = new mapboxgl.Map({
   zoom: 14,
 });
 
-// TODO: add a marker to the map
+// added a marker to the map
 let marker = new mapboxgl.Marker().setLngLat([-71.092761, 42.357575]).addTo(map);
 
 // counter here represents the index of the current bus stop
 let counter = 0;
 function move() {
-  // TODO: move the marker on the map every 1000ms. Use the function marker.setLngLat() to update the marker coordinates
+  //  move the marker on the map every 1000ms. Use the function marker.setLngLat() to update the marker coordinates
   // Use counter to access bus stops in the array busStops
 
   setTimeout(() => {
